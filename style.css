@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(218, 23%, 16%);
+    color: hsl(193, 38%, 86%);
+    font-family: 'Manrope', sans-serif;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 31.25rem;
+    background-color: hsl(217, 19%, 24%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+    border-radius: 0.9375rem;
+    margin: 1.25rem;
+}
+
+.advice {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 2.1875rem;
+}
+
+.advice-id {
+    letter-spacing: 0.125rem; 
+}
+
+picture {
+    margin-bottom: 1.25rem;
+}
+
+picture img {
+    width: 100%;
+}
+
+.button img {
+    position: absolute;
+    border: none;
+    background-color: hsl(150, 100%, 66%);
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 2.5rem;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.button img:hover {
+    -webkit-box-shadow: 2px 2px 24px -4px rgba(82, 255, 168, 1);
+    -moz-box-shadow: 2px 2px 24px -4px rgba(82, 255, 168, 1);
+    box-shadow: 2px 2px 24px -4px rgba(82, 255, 168, 1);
+}
+
+footer {
+    display: none;
+}
+
+
+@media screen and (max-width: 550px) {
+    .main-container {
+        padding: 1.25rem;
+        max-width: 25rem;
+    }
+
+    .button img {
+        margin-top: 1.4375rem;
+    }
+
+    picture {
+        margin-bottom: 1.875rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main-container {
+        max-width: 21.875rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .main-container {
+        max-width: 18.75rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .main-container {
+        max-width: 15.625rem;
+    }
+
+    picture img {
+        max-width: 12.5rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .main-container {
+        max-width: 12.5rem;
+    }
+}
